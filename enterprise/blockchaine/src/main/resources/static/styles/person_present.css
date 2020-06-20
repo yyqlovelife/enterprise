@@ -1,0 +1,67 @@
+body{
+		margin:0;
+		padding:0;
+		background:url("../imgs/6.jpg") no-repeat;
+		background-size:100%;
+	}
+html{
+	height: 100%;
+	box-shadow:0px 0px 300px #000 inset;
+	-webkit-box-shadow:0px 0px 50px #000 inset;
+}
+form{
+	position:absolute;
+	left:50%;
+	top:40%;
+	margin-left:-300px;
+	margin-top:-220px;
+	width:480px;
+	height:380px;
+	background:url("../imgs/person_query_background.jpg") no-repeat;
+	border-radius:25px;
+	color:#fff;
+	text-align:center;
+	padding:65px;
+	/*box-shadow: 0px 0px 15px #0005;*/
+}
+.input_1{
+	outline:none;
+	margin-top:10px;
+	border:0;
+	width:300px;
+	height:45px;
+
+	padding-left:15px;
+	font-size:18px;
+	color:grey;
+}
+
+h1{
+	color:dimgrey;
+	font-weight: lighter;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.input_3{
+	outline: none;
+	width:100px;
+	height:30px;
+	border:0;
+	color: white;
+	padding:5px 7px;
+	background:#00517d;
+
+	margin:0px 10px;
+}
+.input_4{
+	outline: none;
+	width:100px;
+	height:30px;
+	border:0;
+	color: white;
+	padding:5px 7px;
+	background:darkred;
+
+	margin:0px 10px;
+}

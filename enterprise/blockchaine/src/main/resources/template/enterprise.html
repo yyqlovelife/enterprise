@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-企业中心</title>
+    <link th:href="@{styles/top.css}" rel="stylesheet" type="text/css">
+
+ </head>
+
+<body>
+<div class="container">
+    <div class="menu">
+        <div class="nav" >
+            <ul >
+                <li><img src="imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="home" title="中国建设银行积分链中心">首页</a> </li>
+                <li ><a  href="enterprise" title="企业中心" style="background-color: white;color: #00507C">企业中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="topimage">
+            <img th:src="${'imgs/enterprisehome4.jpg'}" style="height: auto;width: 100%;padding-bottom: 40px"></a>
+        </div>
+        <div class="mainfunction" style="padding-bottom: 5px;width: 1000px;height: auto;margin: 0 auto;text-align: center;width: 40%">
+            <div class="apply" style="float: left;width: 33.3%">
+                <a href="enterprise/enterprise_applyscore" >
+                    <img class="bigger" src="imgs/jifenshouxin.png" style="width: 30%;height: 30%;padding-bottom: 10px">
+                    <p style="color: grey;font-size: 13px;font-weight: lighter">积分授信</p>
+                </a>
+            </div>
+            <div class="convert" style="float: left;width: 33.3%">
+                <a href="enterprise/enterprise_convert">
+                    <img class="bigger" src="imgs/jifenchengdui.png" style="width: 30%;height: 30%;padding-bottom: 10px">
+                    <p style="color: grey;font-size: 13px;font-weight: lighter">积分承兑</p>
+                </a>
+            </div>
+            <div class="query" style="float: right;width: 33.3%">
+                <a href="enterprise/enterprise_queryscore" >
+                    <img class="bigger" src="imgs/jifenchaxun.png" style="width: 30%;height: 30%;padding-bottom: 10px">
+                    <p style="color: grey;font-size: 13px;font-weight: lighter">积分查询</p>
+                </a>
+            </div>
+            <!--<div class="lishi" style="float: right;width: 25%">
+                <a href="enterprise/enterprise_history" >
+                    <img class="bigger" src="imgs/xiaoxilishi.png" style="width: 30%;height: 30%;padding-bottom: 10px">
+                    <p style="color: grey;font-size: 13px;font-weight: lighter">消息历史</p>
+                </a>
+            </div>-->
+        </div>
+        <img th:src="${'imgs/line.jpg'}" style="width: 100%;height: auto;padding-top: 20px;padding-bottom: 30px">
+        <div class="words" style="text-align: center;padding-bottom: 10px">
+            <img th:src="${'imgs/enterprise_bottomwords.jpg'}" style="width: 45%;height: 18%;">
+        </div>
+    </div>
+</div>
+<div class="footer" >
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

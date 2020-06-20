@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-企业积分授信</title>
+    <link th:href="@{../styles/top.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" th:href="@{../styles/form.css}">
+    <script src="../js/form.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+
+
+<body style="background-image:url('../imgs/雪山绿谷.jpg');background-repeat: no-repeat;background-size: 100% 100%">
+<div class="container">
+    <div class="menuu">
+        <div class="navv" >
+            <ul >
+                <li><img src="../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../enterprise" >返回中心</a> </li>
+                <li ><a  href="enterprise_queryscore"  >积分查询</a></li>
+                <li ><a  href="enterprise_applyscore"  style="background-color: white;color: #00507C">授信承兑</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+            <div class="cont_centrar">
+                <div class="cont_login">
+                    <div class="cont_info_log_sign_up">
+                        <div class="col_md_login">
+                            <div class="cont_ba_opcitiy">
+                                <h2>积分授信</h2>
+                                <p>向我行申请积分并发行</p>
+                                <button class="btn_login" onclick="cambiar_login()">填写</button>
+                            </div>
+                        </div>
+                        <div class="col_md_sign_up">
+                            <div class="cont_ba_opcitiy">
+                                <h2>积分承兑</h2>
+                                <p>将企业积分兑换为现金并汇款</p>
+                                <button class="btn_sign_up" onclick="cambiar_sign_up()">填写</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cont_back_info">
+                        <div class="cont_img_back_grey"> <img th:src="${'../imgs/雪山绿谷.jpg'}" alt=""> </div>
+                    </div>
+
+                    <div class="cont_forms cont_forms_active_sign_up">
+                        <div class="cont_img_back_"> <img th:src="${'../imgs/雪山绿谷.jpg'}" alt=""> </div>
+
+                        <div class="cont_form_login" style="opacity: 0; display: none;">
+                            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons"></i></a>
+                            <h2>积分授信</h2>
+                            <input id="id1" type="text" placeholder="为了确保您的安全，请输入您的用户名" >
+                            <input id="score_number1" type="text" placeholder="申请积分数额">
+                            <input id="card_number1" type="text" placeholder="您的建设银行卡号">
+                            <input id="password1" type="password" placeholder="为了确保您的安全，请输入您的密码">
+                            <button id="applybtn" class="btn_login" onclick="apply()">确定</button>
+                        </div>
+                        <div class="cont_form_sign_up" style="display: block; opacity: 1;">
+                            <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons"></i></a>
+                            <h2>积分承兑</h2>
+                            <input id="id2" type="text" placeholder="为了确保您的安全，请输入您的用户名">
+                            <input id="score_number2" type="text" placeholder="承兑积分数额">
+                            <input id="card_number2" type="text" placeholder="您的建设银行卡号">
+                            <input id="password2" type="password" placeholder="为了确保您的安全，请输入您的密码">
+                            <button id="convertbtn" class="btn_sign_up" onclick="convert()">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

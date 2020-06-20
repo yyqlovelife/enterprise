@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scut.blockchaine.Mapper.TransMapper">
+    <insert id="createTrans" parameterType="com.scut.blockchain.Pojo.Trans">
+        insert into transaction(transid,user_name,time,detail,score_change)
+        values (#{transid},#{user_name},#{time},#{detail},#{score_change})
+    </insert>
+    <select id="getTransByName" parameterType="java.lang.String" resultType="com.scut.blockchain.Pojo.Trans">
+        select * from transaction where user_name=#{id};
+    </select>
+</mapper>

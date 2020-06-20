@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scut.blockchaine.Mapper.UserMapper">
+    <select id="getPassword" resultType="java.lang.String">
+        select password from user where name=#{id}
+    </select>
+    <select id="getUser" resultType="com.scut.blockchain.Pojo.User">
+        select * from user where name=#{id}
+    </select>
+    <insert id="createUser" parameterType="com.scut.blockchain.Pojo.User">
+        insert into user(uid,name,password,tel_number,card_number,address)
+        values(#{uid},#{name},#{password},#{tel_number},#{card_number},#{address})
+    </insert>
+</mapper>
